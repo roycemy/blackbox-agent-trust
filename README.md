@@ -11,3 +11,5 @@ Open `index.html` in a browser or run `python3 -m http.server` in this folder.
 ## Deployment
 
 GitHub Pages serves the files from the `main` branch root.
+
+Live site: https://roycemy.github.io/blackbox-agent-trust/
