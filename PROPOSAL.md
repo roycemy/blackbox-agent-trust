@@ -32,7 +32,7 @@ I talked with Yash for about twenty minutes on Sunday. He is a friend, not a cli
 
 ## Layout Plan
 
-The sketch is not in the repo yet. I still need to draw it by hand or in Figma and commit the image. The description I used as the starting prompt is below.
+The hand drawing is `sketch.pdf`. Page one is the desktop layout for Home, How it works, and Why. Page two is the phone layout. The description I used as the starting prompt is below.
 
 Home. Black page. A header with a B mark, the word BLACKBOX, and the same four links on every page: Home, How it works, Why, and Get access. The hero is two columns. Left: a small eyebrow, the word BLACKBOX set very large with BOX in green, the line "Agent companies won't audit themselves.", two short sentences, and a green action that jumps to early access. Right: a receipt card, tilted a few degrees, titled THE RECORD IS YOURS, with three rows (a message recorded, a purchase reviewed, an approval that is your call) and a caption that the activity is illustrative. Under that, a three-column row: Receipts, Rules, The Gate. Then a wide quote that your rules should travel with you when you use more than one agent. Then a closing band that says email signup is not live and shows a control that does not accept an address. A thin footer with the year and "Your agents. Your rules."
 
