@@ -16,6 +16,6 @@ GitHub Pages serves the files from the `main` branch root.
 
 ## Required question
 
-I did not accept the first UI pass. Commit [`fde7366`](https://github.com/roycemy/blackbox-agent-trust/commit/fde73662d62ea0b1657337a6ed9501dfc941f751) ("Add initial styles and font imports in styles.css") gave me a dark page, but it did not listen to the prompt. BLACKBOX was just big type. The receipt sat still, and Receipts, Rules, and The Gate did not come in on scroll.
+I didn't like the first redesign. BLACKBOX was huge and it ran into the receipt on the right. That is not what I asked for.
 
-I sent a second prompt that kept the copy, the three pages, and those pillars, and only changed the look and the motion: a decode on the title, a cursor light, a receipt that tilts toward the mouse, and cards that rise in as you scroll.
+I fixed it in commit [`9456ff4`](https://github.com/roycemy/blackbox-agent-trust/commit/9456ff425743e2059cd82837387e6c24f6f0de55) ("Add breathing room around hero receipt"). I made the title smaller so the card had some space next to it.
