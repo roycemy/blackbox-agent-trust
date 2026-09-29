@@ -2,6 +2,12 @@
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const root = document.documentElement;
 
+  const normalizePath = (pathname) => pathname.replace(/\/index\.html$/i, "/").replace(/\/$/, "") || "/";
+  if (window.location.pathname.endsWith("/index.html")) {
+    const directory = window.location.pathname.slice(0, -"index.html".length);
+    history.replaceState(null, "", `${directory}${window.location.search}${window.location.hash}`);
+  }
+
   if (!reduceMotion) {
     window.addEventListener("pointermove", ({ clientX, clientY }) => {
       root.style.setProperty("--mouse-x", `${clientX}px`);
@@ -140,11 +146,13 @@
       });
     });
 
-    document.querySelectorAll('a[href$=".html"], a[href*=".html#"]').forEach((link) => {
+    document.querySelectorAll('a[href$=".html"], a[href*=".html#"], a[href="./"], a[href="./#early-access"]').forEach((link) => {
       link.addEventListener("click", (event) => {
         if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
         const destination = new URL(link.href, window.location.href);
-        if (destination.pathname === window.location.pathname && destination.hash) return;
+        const samePage = normalizePath(destination.pathname) === normalizePath(window.location.pathname);
+        if (samePage && destination.hash) return;
+        if (samePage && !destination.hash) return;
         event.preventDefault();
         document.body.classList.add("page-out");
         window.setTimeout(() => { window.location.href = destination.href; }, 260);
