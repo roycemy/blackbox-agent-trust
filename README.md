@@ -16,6 +16,6 @@ GitHub Pages serves the files from the `main` branch root.
 
 ## Required question
 
-I kept the first version of How it works. It is commit [`7f0dde4`](https://github.com/roycemy/blackbox-agent-trust/commit/7f0dde43c34d46b389b052c701988d22013cda64) ("Explain receipts, rules and approval gate").
+I did not accept the first UI pass. Commit [`fde7366`](https://github.com/roycemy/blackbox-agent-trust/commit/fde73662d62ea0b1657337a6ed9501dfc941f751) ("Add initial styles and font imports in styles.css") gave me a dark page, but it did not listen to the prompt. BLACKBOX was just big type. The receipt sat still, and Receipts, Rules, and The Gate did not come in on scroll.
 
-I checked that commit by serving the repo and opening `how-it-works.html`, then the same URL on GitHub Pages. The header links match Home and Why. The page has the three sections Yash asked for: receipts, rules, and the gate. Each panel says the example is not a live agent. Approve and Decline are text, not controls that send a message. The early-access link goes to the home section that says no address is collected. Those checks are why I left the page as it was committed.
+I sent a second prompt that kept the copy, the three pages, and those pillars, and only changed the look and the motion: a decode on the title, a cursor light, a receipt that tilts toward the mouse, and cards that rise in as you scroll.
